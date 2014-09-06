@@ -16,6 +16,7 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   'styles/**/*.css'
+   , 'components/**/*.css'
 ];
 
 
@@ -32,6 +33,8 @@ var jsFilesToInject = [
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
   'js/**/*.js'
+
+   , 'components/**/*.js'
 ];
 
 

@@ -5,10 +5,28 @@ html
 
     // Viewport mobile tag for sensible mobile support
     meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
-
+    link(rel='stylesheet', href='/components/bootstrap/css/bootstrap.css')
+    // STYLES
+    // STYLES END
     block styles
 
   body
+    nav.navbar.navbar-default( role="navigation")
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed( type="button", data-toggle="collapse",  data-target="#bs-example-navbar-collapse-1")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href="#") Brand
+
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+                li.active
+                    a(href="#") Link
+                li.active
+                    a(href="#") Question
     block body
 
     // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js

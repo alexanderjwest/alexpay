@@ -31,9 +31,9 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-  '/': {
-      conroller: 'register'
+  '*': true
+  , '/': {
+      controller: 'register'
       , action: 'home'
   }
 
